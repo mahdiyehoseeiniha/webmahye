@@ -1,0 +1,237 @@
+@font-face{
+    font-family: 'yekan';
+    src: url('../fonts/Yekan.ttf');
+}
+
+*{
+    font-family: "yekan", verdana;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    /* font-size: 15px;
+    line-height: 1.5;
+    font-family: "yekan"; */
+    font: 15px/1.5 "yekan";
+
+    direction: rtl !important;
+    /* text-align: right; */
+}
+
+/* GLOBAL */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.highlight{
+    color: #e8491d;
+}
+
+.active{
+    color: #e8491d !important;
+    font-weight: 800;
+}
+
+/* HEADER */
+header{
+    background-color: #35424a;
+    color: #fff;
+    padding: 30px 0px;
+    /* min-height: 70px; */
+    border-bottom: 3px solid #e8491d;
+
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+}
+
+header::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header #branding{
+    float: right;
+}
+
+header #branding h1{
+    margin: 0;
+    font-weight: normal;
+}
+
+header nav{
+    float: left;
+}
+
+header li{
+    float: right;
+    padding: 10px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+header a:hover{
+    color: #ccc;
+}
+/* End of HEADER */
+
+/* services */
+.titr{
+    width: 80%;
+    margin: 0 120px;
+    padding: 10px;
+
+}
+.boxx{
+    width: 700px;
+    margin: 0 130px 5px 0;
+    padding: 0 10px;
+    background-color: gainsboro;
+    border: #ccc solid 2px;
+}
+.margin{
+    margin: 20px 0;
+    float: right;
+}
+.boxx p h1{
+    margin: 0;
+}
+.put{
+float: right;
+width: 300px;
+margin:20px 40px 0 0;
+background: #35424a;
+padding: 5px 20px 7px ;
+color: #fff;
+}
+
+
+/* NEWSLETTER */
+#newsletter{
+    background-color: #35424a;
+    color: #fff;
+}
+
+#newsletter::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#newsletter h1 {
+    float: right;
+    margin-top: 20px;
+}
+
+#newsletter form{
+    float: left;
+    margin-top: 20px;
+}
+
+#newsletter input[type="email"]{
+    padding: 5px;
+    width: 250px;
+    /* height: 25px; */
+    border-radius: 3px;
+    border: 0;
+}
+
+ .btn{
+    height: 37px;
+    background-color: #e8491d;
+    border: 0;
+    padding: 0px 20px;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+label[for="نام"], label[for="ایمیل"], label[for="نظر"], button[name=ارسال] {
+    display: block;
+    cursor: pointer;
+    
+
+}
+button[name=ارسال] {
+    margin-top: 5px;
+}
+
+input{
+    width: 300px;
+}
+.in{
+    height:40px ;
+}
+/* End of NEWSLETTER */
+
+/* SERVICES */
+#services{
+    margin-top: 20px;
+}
+#services .box{
+    float: right;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+#services h2{
+    font-size: 18px;
+    font-weight: 700;
+}
+#services img{
+    width: 90px;
+}
+/* End if SERVICES */
+
+/* FOOTER */
+footer{
+    background-color: #e8491d;
+    padding: 20px;
+    clear: both;
+    color: #fff;
+    text-align: center;
+}
+footer p {
+    letter-spacing: 10px;
+    font-size: 18px;
+}
+/* end of FOOTER */
+
+@media (max-width: 768px){
+    #branding, nav, nav li, #newsletter h1, #newsletter form, #services .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    #newsletter{
+        padding-bottom: 10px;
+    }
+    #newsletter h1 {
+        margin-top: 0;
+    }
+    #showcase h1{
+        padding-top: 100px;
+    }
+
+    .btn, form input{
+        width: 100% !important;
+        box-sizing: border-box;
+        display: block;
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+}
