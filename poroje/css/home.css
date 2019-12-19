@@ -1,0 +1,17 @@
+@font-face{
+    font-family: 'fonti';
+    src: url(../fonts/NotoSansTC-Black.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+    font-family: "fonti";
+}
+body{
+    background: url(../images/back.jpg) 0 0/ cover no-repeat;
+}
+

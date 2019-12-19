@@ -1,0 +1,186 @@
+@font-face{
+    font-family: fonti;
+    src: url(./Roboto-Light.ttf)
+}
+
+
+*{
+margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+font-family: fonti;
+font-weight: bold;
+letter-spacing: .5px;
+}
+
+
+.back1{
+    background: url(./img/showcase.jpg) 0 0/cover no-repeat;
+    height: 150vh;
+    color: #CCD1D1;
+    text-align: center;
+}
+head{
+    margin: 100px;
+}
+.back1 h1{
+    padding-top: 300px;
+    font-size: 50px;
+}
+
+.back1 h3{
+    padding: 25px 0;
+    font-size: 25px;
+}
+.back1 p{
+    padding: 0 200px;
+}
+
+.back2{
+    background: #222;
+    height: 150vh;
+    color: #CCD1D1;
+    text-align: center;
+
+}
+.back2 h1{
+    padding-top: 50px;
+    font-size: 40px;
+
+}
+.back2 h3{
+    padding: 40px 0;
+    font-size: 25px;
+}
+.back2 p{
+    padding: 0 150px;
+}
+.button{
+    padding: 15px;
+    margin: 20px;
+    background: brown;
+   
+}
+button a {
+     text-decoration: none;
+     color: #CCD1D1;
+
+}
+img{
+    width: 130vh;
+}
+
+.back3{
+    background: #A49E9E;
+    height: 150vh;
+    color: #222;
+    text-align: center;
+
+}
+.buttonB{
+    padding: 15px;
+    margin: 20px auto;
+    background: #15137B;
+    display: block;
+    
+}
+
+.back3 h1{
+    padding-top: 50px;
+
+}
+.back3 p{
+    padding:30px 250px;
+    
+}
+.back4{
+    background: url(./img/section-bg.jpg) no-repeat;
+    background-size: 206vh 180vh;
+    background-position-y: 100%;
+    height: 75vh;
+    color: #CCD1D1;
+    text-align: center;
+}
+.back4 h1{
+    padding-top: 150px;
+    font-size: 35px;
+}
+.back4 p{
+    padding: 50px 200px;
+}
+aside{
+    height: 75vh;
+    background: #A49E9E;
+}
+#side{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr );
+    grid-gap: 30px;
+
+}
+#side div{
+    width: 700px;
+    padding: 40px;
+}
+#side img{
+    width: 600px;
+}
+#side h1{
+    padding: 60px 20px 20px 0;
+     font-size: 40px;
+     font-weight: bolder;
+}
+#side p{
+    width:500px;
+    padding-bottom:20px; 
+    border-bottom: #777 solid 2px;
+}
+#side a{
+    text-decoration: none;
+    color: #15137B;
+}
+h4{
+padding:20px 10px 10px 0px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr );
+    grid-gap: 10px;
+    padding: 0 70px; 
+    background: #333;
+    height: 50vh;
+    color: #CCD1D1;
+}
+.content div{
+   /* background: navajowhite; */
+    padding: 10px;
+    margin: 45px 45px 35px 30px;
+ }
+ .content h1{
+     padding: 20px 0 ;
+     border-bottom: #777 solid 1px;
+     font-size: 20px;
+ }
+ .content p{
+     padding: 20px 0;
+ }
+ .end{
+     color: #CCD1D1;
+     background:#444;
+     padding: 20px;
+     text-align: center;
+     }
+     
+@media (max-width: 768px){
+    .back1, .back2, .back3, .back4, #side, .content, .end{
+        width: 100%;
+    }
+}
+.content,#side{
+   padding: 0;
+   margin: 0;
+}
