@@ -1,0 +1,13 @@
+@mixin links ($link, $hover, $active) {
+    & {
+        color: $link;
+        &:hover {
+            color: $hover;
+        }
+        &:active, &:focus {
+            color: $active;
+        }
+    }
+}
+
+a { @include links(green, blue, red); }
